@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact / Sign-up - Mouse Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-wrap{ max-width:720px; margin: 24px auto; padding:18px; border-radius:12px; }
+    .row{ display:flex; gap:12px; }
+    label{ display:block; margin-bottom:6px; }
+  </style>
+<body class="main-frame">
+  <h1>Contact / Sign-up</h1>
+  <div class="contact-wrap">
+    <form id="signup">
+      <div>
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required style="width:100%; padding:10px;">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required style="width:100%; padding:10px;">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" style="width:100%; padding:10px;">
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for" required style="width:100%; padding:10px;"></textarea>
+      </div>
+
+      <fieldset style="margin-top:12px;">
+        <legend>Preferred contact method</legend>
+        <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+        <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+      </fieldset>
+
+      <fieldset style="margin-top:12px;">
+        <legend>Interests</legend>
+        <label><input type="checkbox" name="interestGaming" value="gaming"> Gaming mice</label>
+        <label><input type="checkbox" name="interestWireless" value="wireless"> Wireless mice</label>
+        <label><input type="checkbox" name="interestErgo" value="ergo"> Ergonomic mice</label>
+      </fieldset>
+
+      <div style="margin-top:12px;">
+        <label for="budget">Your budget</label>
+        <select id="budget" name="budget" required>
+          <option value="">-- choose --</option>
+          <option value="under50">Under Rp 100.000</option>
+          <option value="50-100">Rp 100.000 - Rp 1.000.000</option>
+          <option value="100plus">Rp 1.000.000+</option>
+        </select>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label><input type="checkbox" id="agree" name="agree"> I agree to the terms and newsletter</label>
+      </div>
+
+      <div style="margin-top:16px;">
+
+        <button type="submit" style="padding:10px 18px; border-radius:8px; font-weight:600;">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
